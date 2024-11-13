@@ -1,27 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A37C5E;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    background-color: #372A25;
+    color: #FAF7F3;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #372A25;
+    color: #FAF7F3;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
+  footer a {
+    color: #44542B;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #6f903a;
+    text-decoration: underline;
+  }
 
-section {
-  padding: 2rem;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+  .nav-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .nav-buttons button {
+    font-family: Georgia, sans-serif;
+    padding: 10px 20px;
+    background-color: #44542B;
+    color: #FAF7F3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #263016;
+  }
