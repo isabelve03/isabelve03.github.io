@@ -89,3 +89,33 @@ footer a:hover {
   position: relative;
   width: 32vw;
 }
+
+#home-button {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+}
+
+#home-button button {
+  font-family: Georgia, sans-serif;
+  padding: 10px 20px;
+  background-color: #6a725c;
+  color: #f5ece4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#home-button button:hover,
+#home-button button:active {
+  background-color: #f32a2a;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
