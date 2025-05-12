@@ -113,6 +113,120 @@ footer a:hover {
   transform: scale(1.1);
 }
 
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color: #372A25;
+  color: #f5ece4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: #41322c;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.project-card a {
+  color: #b6d188;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  color: #ed3232;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.headshot img {
+  width: 320px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #f5ece4;
+  box-shadow: 0 4px 235px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  max-width: 500px;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #f5ece4;
+}
+
+/* Fade + Slide In Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.philosophy-section, .fun-facts-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #f5ece4;
+}
+
+.philosophy-section h3,
+.fun-facts-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ed3232;
+}
+
+.philosophy-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.fun-facts-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.fun-facts-section li {
+  margin-bottom: 0.8rem;
+}
+
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -165,47 +279,23 @@ footer a:hover {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
-}
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
+  .project-card {
+    padding: 1rem;
+  }
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+  .project-card p {
+    font-size: 0.95rem;
+  }
 
-.project-card {
-  background-color: #372A25;
-  color: #f5ece4;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.project-card:hover {
-  transform: scale(1.05);
-  background-color: #41322c;
-}
-
-.project-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-card a {
-  color: #b6d188;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project-card a:hover {
-  color: #ed3232;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 0.75rem;
+  .about-text {
+    text-align: center;
+  }
 }
