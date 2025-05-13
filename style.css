@@ -170,7 +170,7 @@ footer a:hover {
 }
 
 .headshot img {
-  width: 320px;
+  width: 400px;
   height: auto;
   border-radius: 50%;
   border: 4px solid #f5ece4;
@@ -179,9 +179,10 @@ footer a:hover {
 
 .about-text {
   max-width: 500px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: left;
   color: #f5ece4;
+  line-height: 1.6;
 }
 
 /* Fade + Slide In Animation */
@@ -194,6 +195,12 @@ footer a:hover {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ed3232;
 }
 
 .philosophy-section, .fun-facts-section {
@@ -212,20 +219,24 @@ footer a:hover {
 }
 
 .philosophy-section p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
 .fun-facts-section ul {
   list-style: none;
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .fun-facts-section li {
   margin-bottom: 0.8rem;
 }
 
+/* Hamburger hidden by default on large screens */
+.hamburger {
+  display: none;
+}
 
 @media (max-width: 768px) {
   header {
@@ -235,15 +246,34 @@ footer a:hover {
   }
 
   .nav-buttons {
+    display: none; /* Hide by default for hamburger */
     flex-direction: column;
     width: 100%;
     align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #372A25;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .nav-buttons.show {
+    display: flex;
   }
 
   .nav-buttons button {
     width: 80%;
     font-size: 1rem;
     margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #FAF7F3;
   }
 
   .home {
@@ -267,7 +297,7 @@ footer a:hover {
   footer {
     font-size: 0.9rem;
     padding: 0.5rem;
-    position: relative; /* avoids mobile overlap weirdness */
+    position: fixed; 
   }
 
   #home-button {

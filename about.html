@@ -7,7 +7,11 @@
 </head>
 <header>
     <h1>About Me</h1>
-    <div class= "nav-buttons">
+    <!-- Hamburger menu icon (hidden on desktop) -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation buttons with an ID for JS to toggle -->
+    <div class="nav-buttons" id="navMenu">
       <button onclick="location.href='education.html'">Education</button>
       <button onclick="location.href='skills.html'">Skills</button>
       <button onclick="location.href='projects.html'">Projects</button>
@@ -19,34 +23,40 @@
     </div>
 </header>
 <section class="about-container">
-  <div class="headshot">
+  <div class="headshot hidden">
     <img src="Images/headshot.jpg" alt="Photo of Me">
   </div>
   <div class="about-text hidden">
-    <h2>Hi, I'm Isa!</h2>
+    <h2>Hi, I'm Isabel!</h2>
     <p>
-      I'm a creative developer and game designer passionate about crafting heartfelt, whimsical experiences through storytelling and interactive design.
-    </p>
-    <p>
-      I love experimenting learning and creating all sorts of things ranging from video games to creative design. My goal is speak to the community and the imagination. When I’m not coding or designing, I’m probably sketching, sharpening my skills, reading, or playing games.
+      As a designer, I create experiences that allow individuals to immerse themselves in the worlds of my creation. 
+      My inspiration stems from the many years of unraveling the wide arsenal of creative arts in video games. 
+      All interactions are unique and personal, giving the opportunity to create lasting memories within the experience. 
+      I value creativity, emotional connection, and fostering community in the powerful and relevant medium. 
+      In my career, I envision utilizing all that I am to give people an experience just like I had. 
+      Whether it be through code, art, or writing, my voice of love and comfort intertwines with my work; 
+      the artistic expression designs experience and brings about community. 
+      I aim for immersion through interaction with stories, choice, and the sense of comfort from my designs.
     </p>
   </div>
 </section>
 <section class="philosophy-section hidden">
-  <h3>My Creative Philosophy</h3>
+  <h3>My Personal Philosophy</h3>
   <p>
-    I believe games are modern-day campfires — places where people gather, share stories, and feel seen.  
-    Through narrative, music, and mechanics, I aim to build worlds that inspire curiosity and warmth.
+    I believe in self-improvement. Having an open-mind and consistenly sharpening your knowledge will equip you for all sorts of challenges and opportunities.
+    The growth gained from learning from others or self-taught skills will keep a fresh perspective and a strong mindset.
+    This prevents staying stagnant and prevent negativity. Play games, share stories, and indulge curiosity.
   </p>
 </section>
 
 <section class="fun-facts-section hidden">
   <h3>Fun Facts</h3>
   <ul>
-    <li>I made my first game using Python at a game jam 🐍</li>
-    <li>I love cozy pixel art and stylized fantasy aesthetics 🎨</li>
-    <li>I’m currently building a VR blacksmithing game 🔨</li>
-    <li>My favorite games are Spiritfarer, Celeste, and Hollow Knight ✨</li>
+    <li>I can solve a rubix's cube in one minute.</li>
+    <li>Currently learning how to play chess.</li>
+    <li>I love reading fantasy books and sketching on my free time.</li>
+    <li>I’m currently working on finishing this website :D</li>
+    <li>My favorite games Valorant, League of Legends, and Red Dead Redemption 2</li>
   </ul>
 </section>
 <body>
