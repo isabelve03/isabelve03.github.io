@@ -262,11 +262,14 @@ footer a:hover {
 }
 
 .skill-card {
-  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .skill-card.show {
-  display: block; 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skills-container {
@@ -274,11 +277,6 @@ footer a:hover {
   margin: 0 auto;
   text-align: left;
   padding: 2rem 0;
-}
-
-.skill-label {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
 }
 
 .skill-bar {
@@ -394,4 +392,31 @@ footer a:hover {
   .about-text {
     text-align: center;
   }
+
+.filter-buttons {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex; /* Fix */
+  justify-content: center; /* Center buttons */
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  padding: 0 1rem; /* Add side padding for smaller viewports */
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  border: none;
+  background: #372A25;
+  color: #FAF7F3;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button:active {
+  background-color: #f32a2a;
+  transform: scale(1.1);
+}
 }
