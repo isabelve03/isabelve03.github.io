@@ -22,3 +22,15 @@ document.addEventListener("click", function(event) {
     navMenu.classList.remove("show");
   }
 });
+
+// Prevent navigation on current page buttons
+document.addEventListener("DOMContentLoaded", function() {
+  const currentPageButtons = document.querySelectorAll(".nav-buttons button.current-page");
+  currentPageButtons.forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    });
+  });
+});
