@@ -1,1 +1,1 @@
-Hello and welcome to this github repo. Here, I practicing my HTML and CSS skills while creating a website that will highlight my projects as well as resume! Thank you for your interest!
+Personal portfolio and resume site for Isabel Veliz, hosted on GitHub Pages. A single-page site covering PeopleSoft/ERP work experience (HCM, Financials, Campus Solutions), education and certifications, a game development portfolio, and a downloadable resume. Built with plain HTML, CSS, and JavaScript — no build step required.

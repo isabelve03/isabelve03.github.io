@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isabel Veliz - Portfolio</title>
+  <meta name="description" content="Isabel Veliz — PeopleSoft Applications Support Specialist, game developer, and Certified in Cybersecurity (CC).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Images/favicon.png" type="images/png" />
 </head>
@@ -13,31 +17,650 @@
     <!-- Hamburger menu icon (hidden on desktop) -->
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <!-- Navigation buttons with an ID for JS to toggle -->
+    <!-- Navigation buttons with anchor links for smooth scrolling -->
     <div class="nav-buttons" id="navMenu">
-      <button onclick="location.href='about.html'">About Me</button>
-      <button onclick="location.href='education.html'">Education</button>
-      <button onclick="location.href='skills.html'">Skills</button>
-      <button onclick="location.href='projects.html'">Projects</button>
-      <button onclick="location.href='contact.html'">Contact</button>
-      <button onclick="location.href='resume.html'">Resume</button>
+      <button onclick="scrollToSection('home')">Home</button>
+      <button onclick="scrollToSection('about')">About Me</button>
+      <button onclick="scrollToSection('experience')">Experience</button>
+      <button onclick="scrollToSection('education')">Education</button>
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('games')">Games</button>
+      <button onclick="scrollToSection('resume')">Resume</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
     </div>
   </header>
-  <section class="home">
-    <div class="homecontent">
+
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <div class="homecontent fade-element">
       <h2>Hello!</h2>
-      <p>I'm Isabel, a game developer with a passion for coding and creative design.</p>
+      <p>I'm Isabel — a PeopleSoft Applications Support Specialist, game developer, and Certified in Cybersecurity (CC). By day I support HCM, Financials, and Campus Solutions for a university community; by night I build games and worlds of my own. I'm driven by curiosity and a love for understanding how systems work, whether that system is an ERP module or a story I'm designing for a player to discover.</p>
+      <span class="tagline fade-element">PeopleSoft &middot; Game Development &middot; Cybersecurity</span>
     </div>
-    <div class="homeimage">
+    <div class="homeimage fade-element">
       <img src="Images/Mushroom.png" alt="">
     </div>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="about-container">
+      <div class="headshot fade-element">
+        <img src="Images/headshot.jpg" alt="Photo of Me">
+      </div>
+      <div class="about-text fade-element">
+        <h2>Hi, I'm Isabel!</h2>
+        <p>
+          As a designer, I create experiences that allow individuals to immerse themselves in the worlds of my creation.
+          My inspiration stems from the many years of unraveling the wide arsenal of creative arts in video games.
+          All interactions are unique and personal, giving the opportunity to create lasting memories within the experience.
+          I value creativity, emotional connection, and fostering community in the powerful and relevant medium.
+          In my career, I envision utilizing all that I am to give people an experience just like I had.
+          Whether it be through code, art, or writing, my voice of love and comfort intertwines with my work;
+          the artistic expression designs experience and brings about community.
+          I aim for immersion through interaction with stories, choice, and the sense of comfort from my designs.
+        </p>
+      </div>
+    </div>
+    <div class="philosophy-section fade-element">
+      <h3>My Personal Philosophy</h3>
+      <p>
+        I believe in self-improvement. Having an open-mind and consistenly sharpening your knowledge will equip you for all sorts of challenges and opportunities.
+        The growth gained from learning from others or self-taught skills will keep a fresh perspective and a strong mindset.
+        This prevents staying stagnant and prevent negativity. Play games, share stories, and indulge curiosity.
+      </p>
+    </div>
+    <div class="fun-facts-section fade-element">
+      <h3>Fun Facts</h3>
+      <ul>
+        <li>I can solve a rubix's cube in one minute.</li>
+        <li>Currently learning how to play chess.</li>
+        <li>I love reading fantasy books and sketching on my free time.</li>
+        <li>I'm currently working on finishing this website :D</li>
+        <li>My favorite games Valorant, League of Legends, and Red Dead Redemption 2</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <h1 class="section-heading fade-element">Experience</h1>
+    <p class="section-subheading fade-element">Where I've applied my skills — from supporting a university-wide PeopleSoft ERP to rapid-fire game jams.</p>
+
+    <div class="experience-list">
+      <div class="role-card role-current fade-element">
+        <div class="role-header">
+          <h3 class="role-title">Applications Support Specialist — PeopleSoft <span class="current-pill">Current</span></h3>
+          <span class="role-dates">May 2025 – Present</span>
+        </div>
+        <p class="role-org">Azusa Pacific University</p>
+        <p class="role-scope">Support PeopleSoft across <strong>Human Capital Management (HCM)</strong>, <strong>Financials (FSCM)</strong>, and <strong>Campus Solutions (CS)</strong> — from platform security and configuration to day-to-day end-user support.</p>
+
+        <div class="role-group">
+          <h4>Platform &amp; Security (PeopleTools / CS-PU)</h4>
+          <ul>
+            <li>Apply security patches across application servers, PeopleTools, and the database to keep the environment current and protected.</li>
+          </ul>
+        </div>
+
+        <div class="role-group">
+          <h4>Talent Acquisition Management (TAM)</h4>
+          <ul>
+            <li>Built a new EEO step into the onboarding activity guide.</li>
+            <li>Configured security access for HR staff and hiring managers.</li>
+            <li>Designed and built tiles for a custom Recruitment dashboard.</li>
+            <li>Ran a mass update of Business Unit across all Jobs and Positions in preparation for a TAM rollout.</li>
+            <li>Updated existing onboarding activity guide and job application steps.</li>
+            <li>Diagnosed and fixed TAM email notification configuration.</li>
+          </ul>
+        </div>
+
+        <div class="role-group">
+          <h4>Time and Labor</h4>
+          <ul>
+            <li>Modified time administration rules to support 7th-day-premium pay.</li>
+            <li>Built an exception so employees clocking "meal out" instead of "out" still generate accurate overtime.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="role-card fade-element">
+        <div class="role-header">
+          <h3 class="role-title">Cybersecurity Student Intern</h3>
+          <span class="role-dates">January 2025 – May 2025</span>
+        </div>
+        <p class="role-org">Azusa Pacific University</p>
+        <ul>
+          <li>Identified threats and implemented procedures in application and network security, keeping the organization safe and secure alongside a team.</li>
+          <li>Assisted 10+ users daily through technical support and trained 100+ employees on security awareness.</li>
+          <li>Executed the containment, eradication, and recovery model of incident response under short time frames.</li>
+        </ul>
+      </div>
+
+      <div class="role-card fade-element">
+        <div class="role-header">
+          <h3 class="role-title">Game Jam 2024 + 2025</h3>
+          <span class="role-dates">January 2024 &amp; January 2025</span>
+        </div>
+        <p class="role-org">Azusa Pacific University</p>
+        <ul>
+          <li>Collaborated in 2 game jams to rapidly prototype original games under 48 hours.</li>
+          <li>Demonstrated adaptability, teamwork, and problem-solving in high-pressure, fast-paced environments.</li>
+          <li>Led programming and gameplay design, shipping fully playable builds using Unity and Python.</li>
+        </ul>
+      </div>
+
+      <div class="role-card fade-element">
+        <div class="role-header">
+          <h3 class="role-title">Student Scanner Operator</h3>
+          <span class="role-dates">December 2021 – May 2022</span>
+        </div>
+        <p class="role-org">Azusa Pacific University</p>
+        <ul>
+          <li>Scanned and indexed documents with accuracy while maintaining confidentiality.</li>
+          <li>Contributed over 1,000+ high-quality scanned documents to the university in a single semester.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section section">
+    <div class="education-content">
+      <h1 class="fade-element">Education</h1>
+      <div class="fade-element">
+        <p><strong>Azusa Pacific University</strong> — Azusa, CA</p>
+        <p>Bachelor of Science in Computer Science, Game Development Concentration <br>August 2021 – May 2025</p>
+
+        <h2>Relevant Coursework</h2>
+        <ul>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Mobile App &amp; Game Development</li>
+          <li>Cybersecurity</li>
+          <li>Software Engineering</li>
+          <li>Operating Systems</li>
+        </ul>
+
+        <h2>Awards &amp; Honors</h2>
+        <ul>
+          <li>Dean's List — Fall 2023 &amp; Fall 2024</li>
+          <li>Undergraduate Fr. Provost Scholarship</li>
+          <li>Project Management (Badgr)</li>
+        </ul>
+
+        <h2>Saint Lucy's Priory High School — Glendora, CA</h2>
+        <p>Honor's Student-Athlete, Girls Who Code, JV &amp; Varsity Softball, GPA: 4.1 <br>August 2017 – May 2021</p>
+      </div>
+
+      <div class="certifications fade-element">
+        <h2>Certifications</h2>
+        <div class="cert-card">
+          <span class="cert-icon">🛡️</span>
+          <div>
+            <div class="cert-name">(ISC)² Certified in Cybersecurity (CC)</div>
+            <div class="cert-issuer">Issued by ISC2</div>
+          </div>
+          <span class="cert-status">Active</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <h1 class="fade-element">Sift through the different kinds of skills I have!</h1>
+    <div class="filter-buttons fade-element">
+      <button onclick="filterSkills('all')">All</button>
+      <button onclick="filterSkills('peoplesoft')">PeopleSoft / ERP</button>
+      <button onclick="filterSkills('programming')">Programming</button>
+      <button onclick="filterSkills('software')">Software</button>
+      <button onclick="filterSkills('soft')">Soft Skills</button>
+      <button onclick="filterSkills('languages')">Languages</button>
+    </div>
+
+    <div class="skills-container">
+      <div class="skill-card peoplesoft fade-element">
+        <h4>PeopleCode</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>PeopleTools</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Application Engine</h4>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
+        <h4>Activity Guide / Page Configuration</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Security Configuration</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>SQL (PeopleSoft Queries)</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill-card programming fade-element">
+        <h4>C#/Unity</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <h4>Java</h4>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
+        <h4>HTML/CSS</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>C/Powershell</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>C++</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>Python</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>MySQL</h4>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
+        <h4>Data Structures and Algorithms</h4>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+        <h4>Node.js</h4>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
+        <h4>Cybersecurity</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <h4>Machine Learning</h4>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
+        <h4>Game Development</h4>
+        <div class="skill-bar"><div style="width: 99%"></div></div>
+        <h4>Mobile APP Development</h4>
+        <div class="skill-bar"><div style="width: 89%"></div></div>
+      </div>
+
+      <div class="skill-card software fade-element">
+        <h4>Unity</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <h4>Unreal Engine 5</h4>
+        <div class="skill-bar"><div style="width: 70%"></div></div>
+        <h4>GitHub</h4>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+        <h4>VSCode</h4>
+        <div class="skill-bar"><div style="width: 99%"></div></div>
+        <h4>Ren'Py</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Jupyter Notebook</h4>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+        <h4>Trello</h4>
+        <div class="skill-bar"><div style="width: 99%"></div></div>
+        <h4>Slack</h4>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+        <h4>Google Sheets/Excel</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Word</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>Crowdstrike</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>Jira</h4>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+        <h4>Alfresco</h4>
+        <div class="skill-bar"><div style="width: 70%"></div></div>
+        <h4>Ephesoft</h4>
+        <div class="skill-bar"><div style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill-card soft fade-element">
+        <h4>Effective Communicator</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <h4>Problem-Solving</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>Logical Reasoning</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Organization</h4>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+        <h4>Time Management</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>Critical Thinking</h4>
+        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <h4>Attentative to Detail</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Self-Driven</h4>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+        <h4>Team Leader and Collaborator</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <h4>Quick Learner</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+      </div>
+
+      <div class="skill-card languages fade-element">
+        <h4>English</h4>
+        <div class="skill-bar"><div style="width: 100%"></div></div>
+        <h4>Spanish</h4>
+        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <h4>Mandarin</h4>
+        <div class="skill-bar"><div style="width: 15%"></div></div>
+        <h4>Japanese</h4>
+        <div class="skill-bar"><div style="width: 5%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games" class="section projects-section">
+    <h1 class="section-heading fade-element">Game Development Portfolio</h1>
+    <p class="section-subheading fade-element">Here you will find all of the games I've worked on — many through my game development concentration classes at APU, two of which were entries for the Global Game Jam.</p>
+    <div class="project-grid fade-element">
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Fighting</span></div>
+          <img src="Images/Hallowclash.jpg" alt="HallowClash screenshot">
+        </div>
+        <h3>HallowClash</h3>
+        <p>A Medievel-themed 2D pixel-art fighter game for my senior capstone!</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://gamingiv.itch.io/hallowclash" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Simulation</span></div>
+          <img src="Images/lacksmith.png" alt="lacksmith screenshot">
+        </div>
+        <h3>lacksmith</h3>
+        <p>Stylized VR game where you forge weapons with your own hands as a Blacksmith.</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://apu-games.itch.io/lacksmith" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Platformer</span></div>
+          <img src="Images/bubble.png" alt="Bubble Duck screenshot">
+        </div>
+        <h3>Bubble Duck</h3>
+        <p>Competitive survival game for one to four players where you can compete against your friends locally. Made for Global Game Jam 2025.</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://gamingiv.itch.io/bubbleduck" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Survival</span></div>
+          <img src="Images/DemiGhost.jpg" alt="Demi-Ghost screenshot">
+        </div>
+        <h3>Demi-Ghost</h3>
+        <p>Escape, Survive, and Find all three coins to survive the paranormal in this fun first-person shooter!</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://gamingiv.itch.io/demi-ghosts" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Platformer</span><span class="badge-browser">Play in Browser</span></div>
+          <img src="Images/CookieCat.jpg" alt="Cookie Cat screenshot">
+        </div>
+        <h3>Cookie Cat</h3>
+        <p>Casual adventure of being a cat! A platform game where you get to collect cookies to advance.</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://gamingiv.itch.io/cookie-cat" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Adventure</span></div>
+          <img src="Images/Fitheach.png" alt="Fitheach screenshot">
+        </div>
+        <h3>Fitheach</h3>
+        <p>Story-mode Adventure game where a shephard loses their sheep on their island.</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://gamingiv.itch.io/fitheach" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-media">
+          <div class="card-tags"><span class="tag-pill">Visual Novel</span></div>
+          <img src="Images/GUNMETTAL.png" alt="GUNMETTAL screenshot">
+        </div>
+        <h3>GUNMETTAL</h3>
+        <p>A visual novel of a spy espionage case for Global Game Jam 2024.</p>
+        <div class="card-footer">
+          <a class="play-link" href="https://gamingiv.itch.io/gunmettal" target="_blank">Play on Itch.io</a>
+        </div>
+      </div>
+    </div>
+    <div class="itch-banner fade-element">
+      <p>Want to see everything, including works-in-progress? My full catalog lives on itch.io.</p>
+      <a href="https://gamingiv.itch.io/" target="_blank">Visit my itch.io profile →</a>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume-section">
+    <div class="resume-sheet fade-element">
+      <div class="resume-header">
+        <div>
+          <h2>Isabel Veliz</h2>
+          <p class="resume-contact">
+            <a href="mailto:isabelve03@yahoo.com">isabelve03@yahoo.com</a> &middot;
+            <a href="https://www.linkedin.com/in/isabel-veliz-134b6328a/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <a class="download-btn" href="ProfessionalResume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+
+      <div class="resume-block">
+        <h3>Summary</h3>
+        <p>PeopleSoft Applications Support Specialist supporting HCM, Financials, and Campus Solutions, with a Computer Science degree concentrated in game development and a (ISC)² Certified in Cybersecurity credential. Comfortable moving between ERP configuration, hands-on game development, and application security.</p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Experience</h3>
+        <div class="resume-entry">
+          <div class="resume-entry-header"><span>Applications Support Specialist — PeopleSoft</span><span>May 2025 – Present</span></div>
+          <div class="resume-entry-sub">Azusa Pacific University</div>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-header"><span>Cybersecurity Student Intern</span><span>Jan 2025 – May 2025</span></div>
+          <div class="resume-entry-sub">Azusa Pacific University</div>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-header"><span>Game Jam 2024 + 2025</span><span>Jan 2024 &amp; Jan 2025</span></div>
+          <div class="resume-entry-sub">Azusa Pacific University</div>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-header"><span>Student Scanner Operator</span><span>Dec 2021 – May 2022</span></div>
+          <div class="resume-entry-sub">Azusa Pacific University</div>
+        </div>
+        <p class="section-subheading" style="margin:0.6rem 0 0 0; text-align:left;">See the <a href="#experience" onclick="scrollToSection('experience'); return false;" style="color: inherit; text-decoration: underline;">Experience section</a> above for the full breakdown of each role.</p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Education</h3>
+        <div class="resume-entry">
+          <div class="resume-entry-header"><span>B.S. Computer Science, Game Development Concentration</span><span>Aug 2021 – May 2025</span></div>
+          <div class="resume-entry-sub">Azusa Pacific University</div>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <h3>Certifications</h3>
+        <p>(ISC)² Certified in Cybersecurity (CC) — Active</p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Skills</h3>
+        <div class="resume-skill-tags">
+          <span>PeopleCode</span>
+          <span>PeopleTools</span>
+          <span>SQL</span>
+          <span>C# / Unity</span>
+          <span>Python</span>
+          <span>Java</span>
+          <span>JavaScript</span>
+          <span>HTML/CSS</span>
+          <span>Unreal Engine 5</span>
+          <span>Git/GitHub</span>
+          <span>Cybersecurity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <div class="contact-content fade-element">
+  <h1>Contact Me!</h1>
+  <p>Have a role, project, or question in mind? Send a message below, or reach me directly through email or LinkedIn in the footer.</p>
+  <form action="#" method="POST" id="contactForm">
+
+
+  <label class="label_form" for="name">Name</label>
+  <input class="input_form" type="text" id="name" name="name" placeholder="Your name" required />
+
+
+  <label class="label_form" for="email">Email</label>
+  <input class="input_form" type="email" id="email" name="email" placeholder="your@email.com" required />
+
+
+  <label class="label_form" for="message">Message</label>
+  <textarea class="textarea_form" id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+
+  <button class="button_form" type="submit">Send Message</button>
+  </form>
+
+
+  <script>
+  // Basic front-end validation and sanitization
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+
+  // Prevent HTML/script injections
+  const sanitizer = /[<>]/g;
+  if (sanitizer.test(name) || sanitizer.test(email) || sanitizer.test(message)) {
+  e.preventDefault();
+  alert('Invalid characters detected. Please remove < and >');
+  return;
+  }
+
+
+  // Extra validation
+  if (name.length < 2) {
+  e.preventDefault();
+  alert('Name must be at least 2 characters.');
+  }
+  if (message.length < 10) {
+  e.preventDefault();
+  alert('Message must be at least 10 characters.');
+  }
+  });
+  </script>
+  </div>
+  </section>
+
   <footer>
     <p>Contact me at isabelve03@yahoo.com</p>
-    <a href="https://www.linkedin.com/in/isabel-veliz-134b6328a/" target="_blank">
-      LinkedIn
-    </a>
+    <a href="https://www.linkedin.com/in/isabel-veliz-134b6328a/" target="_blank">LinkedIn</a>
   </footer>
-  <script src="homebutton.js"></script>
+
+  <script src="nav.js"></script>
+  <script src="filtering.js"></script>
+  <script src="fadein.js"></script>
+  <script src="skillbar-animation.js"></script>
+  <script>
+    // Section to button mapping
+    const sectionToButton = {
+      'home': 'Home',
+      'about': 'About Me',
+      'experience': 'Experience',
+      'education': 'Education',
+      'skills': 'Skills',
+      'games': 'Games',
+      'resume': 'Resume',
+      'contact': 'Contact'
+    };
+
+    // Update active navigation button
+    function updateActiveButton(sectionId) {
+      // Remove current-page class from all buttons
+      const navButtons = document.querySelectorAll('.nav-buttons button');
+      navButtons.forEach(button => {
+        button.classList.remove('current-page');
+      });
+
+      // Add current-page class to the active button
+      const buttonText = sectionToButton[sectionId];
+      if (buttonText) {
+        navButtons.forEach(button => {
+          if (button.textContent.trim() === buttonText) {
+            button.classList.add('current-page');
+          }
+        });
+      }
+    }
+
+    // Smooth scroll function for navigation
+    function scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 100; // Adjust for fixed header height
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        // Update active button immediately on click
+        updateActiveButton(sectionId);
+      }
+      // Close mobile menu if open
+      const navMenu = document.getElementById('navMenu');
+      if (navMenu && navMenu.classList.contains('show')) {
+        toggleMenu();
+      }
+    }
+
+    // Keep the hamburger menu toggle function
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      if (navMenu) {
+        navMenu.classList.toggle('show');
+      }
+    }
+
+    // Intersection Observer to detect active section on scroll
+    function initScrollDetection() {
+      // Single source of truth for "which section is active": whichever
+      // section's top has scrolled past the header line. Previously this
+      // ran alongside an IntersectionObserver that could fire for a
+      // different section on the same scroll tick, causing the nav
+      // highlight to jump around between sections. Scroll position is
+      // now the only signal, so the highlight only ever moves forward.
+      const sections = Array.from(document.querySelectorAll('section[id]'));
+
+      function setActiveFromScroll() {
+        const scrollPosition = window.scrollY + 150; // account for header
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i];
+          if (scrollPosition >= section.offsetTop) {
+            updateActiveButton(section.id);
+            break;
+          }
+        }
+      }
+
+      // Set initial on load
+      setActiveFromScroll();
+
+      // Update on scroll, throttled to one check per animation frame
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          setActiveFromScroll();
+          ticking = false;
+        });
+      });
+    }
+
+    // Initialize scroll detection when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initScrollDetection);
+    } else {
+      initScrollDetection();
+    }
+  </script>
 </body>
 </html>
